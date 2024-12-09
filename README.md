@@ -1,8 +1,6 @@
 # Окружение для запуска
 node v20.17.0
 
-# Demo
-[click me](https://artembor.github.io/flight-tickets-react-app/)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
