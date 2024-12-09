@@ -1,0 +1,99 @@
+@import '../../variables.scss';
+
+.card {
+    display: block;
+    border: 2px solid $decor-color-2;
+    border-radius: 2px;
+    padding: 20px;
+    text-decoration: none;
+    color: $font-color-2;
+    height: 100%;
+
+    &__information {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 20px;
+        font-weight: 700;
+        color: $decor-color-1;
+        margin-bottom: 20px;
+    }
+    &__information-logo {
+        width: 108px;
+        height: 42px;
+    }
+    &__parameters {
+        display: grid;
+        gap: 20px;
+        justify-content: space-between;
+    }
+    &__parameters-list {
+        list-style: none;
+        display: grid;
+        gap: 10px;
+    }
+    &__parameters-item {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    @media screen and (min-width: $desktop-size-4) {
+        &__parameters {
+            grid-template-columns: repeat(3, max-content);
+        }
+    }
+}
+// @media screen and (min-width:$desktop-size-4) {
+//     .card__information {
+//         font-size: 32px;
+//     }
+//     .card__information-logo {
+//         width: 155px;
+//         height: 63px;
+//     }
+//     .card__parameters-list {
+//         gap: 14px;
+//     }
+//     .card__parameters-item {
+//         gap: 8px;
+//     }
+// }
+
+// @media screen and (min-width:$desktop-size-3) {
+//     .card__information {
+//         font-size: 36px;
+//     }
+//     .card__information-logo {
+//         width: 175px;
+//         height: 73px;
+//     }
+//     .card__parameters-list {
+//         gap: 18px;
+//     }
+//     .card__parameters-item {
+//         gap: 10px;
+//     }
+// }
+
+// @media screen and (min-width:$desktop-size-2) {
+//     .card__information {
+//         font-size: 40px;
+//     }
+//     .card__information-logo {
+//         width: 185px;
+//         height: 83px;
+//     }
+//     .card__parameters-list {
+//         gap: 24px;
+//     }
+//     .card__parameters-item {
+//         gap: 15px;
+//     }
+// }
+
+// @media screen and (min-width:$desktop-size-1) {
+//     .card__parameters-list {
+//         gap: 35px;
+//     }
+// }

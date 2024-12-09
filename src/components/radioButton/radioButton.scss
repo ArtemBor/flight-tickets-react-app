@@ -1,0 +1,37 @@
+@import '../../variables.scss';
+
+.radio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+
+    & input {
+        display: none;
+    }
+
+    & label {
+        position: relative;
+        width: 100%;
+        padding: 20px 14px 20px 14px;
+        border-radius: 4px;
+        border: 2px solid $decor-color-2;
+        display: block;
+        cursor: pointer;
+        transition: background-color 0.15s;
+        text-transform: uppercase;
+        font-size: 26px;
+        font-weight: 500;
+    }
+
+    & input:checked+label {
+        background-color: $decor-color-1;
+        color: $font-color-1;
+    }
+
+    @media screen and (min-width: $desktop-size-4) {
+        flex-direction: row;
+    }
+}

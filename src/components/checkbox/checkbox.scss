@@ -1,0 +1,51 @@
+@import '../../variables.scss';
+
+.checkbox {
+
+    & input {
+        display: none;
+    }
+
+    & label {
+        position: relative;
+        padding-left: 26px;
+        cursor: pointer;
+        display: block;
+    }
+
+    & label::before {
+        display: block;
+        content: '';
+        width: 18px;
+        height: 18px;
+        border-radius: 1px;
+        border: 2px solid $decor-color-2;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+    }
+
+    & label::after {
+        display: block;
+        content: '';
+        width: 18px;
+        height: 18px;
+        background-image: url('../../../public/images/check.svg');
+        filter: brightness(0) saturate(100%) invert(32%) sepia(98%) saturate(2357%) hue-rotate(218deg) brightness(102%) contrast(105%);
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 0;
+        transition: opacity 0.15s;
+        left: 0;
+    }
+
+    & input:checked + label::after {
+        opacity: 1;
+    }
+
+    & input:checked + label::before {
+        border-color: $decor-color-1;
+    }
+}

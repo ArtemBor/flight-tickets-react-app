@@ -1,0 +1,21 @@
+@import '../../variables.scss';
+
+.button {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.6px;
+    color: $font-color-1;
+    border: 2px solid $decor-color-1;
+    border-radius: 3px;
+    background-color: $decor-color-1;
+    padding: 10px 15px;
+    width: 100%;
+   
+
+    &:hover {
+        background-color: $decor-color-3;
+        border-color: $decor-color-3;
+        transition: background-color 0.15s, border-color 0.15s;
+    }
+}
+

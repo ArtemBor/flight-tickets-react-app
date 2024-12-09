@@ -1,0 +1,34 @@
+@import '../../variables.scss';
+
+.index {
+    display: grid;
+    padding-left: 30px;
+    padding-right: 30px;
+    gap: 20px;
+
+    &__ticket-list {
+        display: grid;
+        gap: 10px;
+        list-style: none;
+    }
+    &__empty-list {
+        font-size: 40px;
+        text-align: center;
+    }
+    @media screen and (min-width: $desktop-size-3) {
+        grid-template-columns: 228px 1fr;
+    }
+
+    @media screen and (min-width: $desktop-size-2){
+        &__ticket-list {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+
+    @media screen and (min-width: $desktop-size-1){
+        &__ticket-list {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}

@@ -1,0 +1,21 @@
+@import '../../variables.scss';
+
+.book-ticket {
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 24px;
+        gap: 12px;
+    }
+
+    &__close {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    &__success-title {
+        margin-bottom: 24px;
+    }
+}
