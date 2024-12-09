@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/flight-tickets-react-app/static/css/main.3f0d6da2.css",
+    "main.js": "/flight-tickets-react-app/static/js/main.a8397d57.js",
+    "static/js/453.f6f312dc.chunk.js": "/flight-tickets-react-app/static/js/453.f6f312dc.chunk.js",
+    "index.html": "/flight-tickets-react-app/index.html",
+    "static/media/check.svg": "/flight-tickets-react-app/static/media/check.b787c3cc60cfef494cb9.svg",
+    "main.3f0d6da2.css.map": "/flight-tickets-react-app/static/css/main.3f0d6da2.css.map",
+    "main.a8397d57.js.map": "/flight-tickets-react-app/static/js/main.a8397d57.js.map",
+    "453.f6f312dc.chunk.js.map": "/flight-tickets-react-app/static/js/453.f6f312dc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3f0d6da2.css",
+    "static/js/main.a8397d57.js"
+  ]
+}
